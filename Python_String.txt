@@ -1,0 +1,93 @@
+1-capitalize()	Converts the first character to upper case
+                i="my world"
+                print(i.capitalize())
+                                        output: My world
+2-casefold()	Converts string into lower case
+                i="MY WORLD"
+                print(i.casefold())
+                                        output: myworld
+3-center()	Returns a centered string
+                i="My World"
+                print(i.center(10,"#"))
+                                       output:#My World#
+4-count()	Returns the number of times a specified value occurs in a string
+		i="My world is wow"
+		print(i.count("w"))
+				       output:3
+
+5-find()	Searches the string for a specified value and returns the position of where it was found
+		i="My world is wow"
+		print(i.find("w"))
+				       output:3
+6-isalpha()	Returns True if all characters in the string are in the alphabet
+		txt = "a5655"
+		txt1="abcdef"
+		x = txt.isalpha()
+		x1=txt1.isalpha()
+		print(x)
+		print(x1)
+				       output:False
+    				              True
+7-isidentifier()	Returns True if the string is an identifier
+			txt = "a44"
+			txt1="2abcdef"
+			x =txt.isidentifier()
+			x1=txt1.isidentifier()
+			print(x)
+			print(x1)
+					output:True
+					       False
+8-isnumeric()	Returns True if all characters in the string are numeric
+		txt = "5655y43"
+		txt1="12345"
+		x =txt.isnumeric()
+		x1=txt1.isnumeric()
+		print(x)
+		print(x1)
+					output:False
+					       True
+10-istitle()	Returns True if the string follows the rules of a title
+		i="The 4G Is Powerful Than 3G"
+		j="The 4g Is Powerful Than 3g"
+		print(i.istitle())
+		print(j.istitle())
+					output:True
+   					       False
+11-ljust(), rjust():Returns a left ,right justified version of the string
+		txt="hai"
+		txt1="hai"
+		x=txt.ljust(10,"3")
+		x1=txt1.rjust(10,"3")
+		print(x)
+		print(x1)
+					output:hai3333333
+ 					       3333333hai
+
+12-lstrip(),rstrip():Returns a left,right trim version of the string
+		txt="aaaaaahai"
+		txt1="haiaaaaa"
+		x=txt.lstrip("a")
+		x1=txt1.rstrip("a")
+		print(x)
+		print(x1)
+					output:hai
+       					       hai
+13-partition()	Returns a tuple where the string is parted into three parts
+		txt = "I could eat bananas all day"
+		x = txt.partition("bananas")
+		print(x)
+					output:('I could eat ', 'bananas', ' all day')
+
+14-zfill()	Fills the string with a specified number of 0 values at the beginning
+		txt = "1"
+		txt1="11"
+		txt2="111"
+		x = txt.zfill(3)
+		x1=txt1.zfill(3)
+		x2=txt2.zfill(3)
+		print(x)
+		print(x1)
+		print(x2)
+					output:001
+					       011
+					       111
